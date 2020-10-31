@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>BANG!</title>
+</head>
+<body>
+    <header>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <div class="Whover"><a href="werewolf.html">Werewolf</a></div>
+              <div class="Shover"><a href="spyfall.html">Spyfall</a></div>
+              <div class="Bhover"><a href="bang.html">BANG!</a></div>
+              <div class="SHhover"><a href="secrethitler.html">Secret Hitler</a></div>
+            </div>
+          </div>
+         <div class=menu onclick="openNav()">&#9776;
+        <a href="index.html">Home</a> 
+        </div>
+    
+    <script>
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
+    
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+    </script>
+    </header>
+    <main class="bang-page">
+       <div class=bang-open>
+         <img class="bang-title" src="images/bang_title.png" alt="BANG!">
+         <p>“BANG” groups players agains each other in the style of a spaghetti western. Every player gets a character card that gives them a special ability, and a secret role card: sheriff, deputy, outlaw, and renegade. The sheriff is revealed at the top of the game and it’s their and the deputy’s job to get rid of all the secret outlaws and the renegade. The outlaws win by getting rid of everyone else, and the renegade wins as long as the sheriff is dead. Load up your six shooters and head to the town square because this is the wild wild west of card games!</p>
+         <p>Players: 4-7</p>
+         <p>Play time: 20-40 minutes</p>
+       </div> 
+       <p class="watch-b">Watch Just Kidding Party play "BANG!" here:</p>
+       <div class=bang-row1>
+        <iframe class=bangvid width="864" height="486" src="https://www.youtube.com/embed/MliHWiQcPWE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <img class="bangbox" id="myImg" src="images/bang_box1 copy.jpg" alt="the BANG! bullet box">
+       </div>
+       <div class=bang-row2>
+         <img class="bang" id="myImg2" src="images/bang_cards.jpg" alt="the BANG! action cards">
+         <img class="bang" id="myImg3" src="images/bang_box.jpg" alt="the contents of the BANG! bullet box">
+       </div>
+    </main>
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+    <script>
+      var modal = document.getElementById("myModal");
+      var img = document.getElementById("myImg");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function() { 
+        modal.style.display = "none";
+      }
+      </script>
+      <script>
+        var modal = document.getElementById("myModal");
+        var img = document.getElementById("myImg2");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
+        </script>
+        <script>
+          var modal = document.getElementById("myModal");
+          var img = document.getElementById("myImg3");
+          var modalImg = document.getElementById("img01");
+          var captionText = document.getElementById("caption");
+          img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+          }
+          var span = document.getElementsByClassName("close")[0];
+          span.onclick = function() { 
+            modal.style.display = "none";
+          }
+          </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Spyfall</title>
+</head>
+<body>
+    <header>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <div class="Whover"><a href="werewolf.html">Werewolf</a></div>
+              <div class="Shover"><a href="spyfall.html">Spyfall</a></div>
+              <div class="Bhover"><a href="bang.html">BANG!</a></div>
+              <div class="SHhover"><a href="secrethitler.html">Secret Hitler</a></div>
+            </div>
+          </div>
+         <div class=menu onclick="openNav()">&#9776;
+        <a href="index.html">Home</a> 
+        </div>
+    
+    <script>
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
+    
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+    </script>
+    </header>
+    <main class=spyfall-bg>
+      <div class=spyfall-open>
+        <img class="spyfall-title" src="images/spyfall_title.png" alt="Spyfall">
+        <p>In “Spyfall”, every player recieves a card with a location and their job within that location, except for one player who’s card simply says “spy”. Players take turns asking each other questions related to the shared location, but the questions must be carefully worded, because while the players are trying to reveal the spy, it’s the spy’s job to guess the location they are in. Whoever makes their guess correctly first wins!</p>
+        <p>Players: 3-8</p>
+        <p>Play time: 15 minutes</p>
+      </div>
+      <p class="watch">Watch Smosh play "Spyfall" here:</p>
+      <div class=spyfall-row1>
+        <img class="spybox" id="myImg" src="images/spyfall_box.png" alt="the Spyfall box">
+        <iframe class="smosh" width="720" height="405" src="https://www.youtube.com/embed/QA6N-XTdeMY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>  
+      <div class=spyfall-row2>
+        <img class="spyfall" id="myImg2" src="images/spyfall_cards.jpg" alt="Cathedral location cards and the Spy card">
+        <img class="spyfall" id="myImg3" src="images/Spyfall_back.jpg" alt="the back of the Spyfall box">
+      </div>
+    </main> 
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+    <script>
+      var modal = document.getElementById("myModal");
+      var img = document.getElementById("myImg");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function() { 
+        modal.style.display = "none";
+      }
+      </script>
+      <script>
+        var modal = document.getElementById("myModal");
+        var img = document.getElementById("myImg2");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
+        </script>
+        <script>
+          var modal = document.getElementById("myModal");
+          var img = document.getElementById("myImg3");
+          var modalImg = document.getElementById("img01");
+          var captionText = document.getElementById("caption");
+          img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+          }
+          var span = document.getElementsByClassName("close")[0];
+          span.onclick = function() { 
+            modal.style.display = "none";
+          }
+          </script>
+</body>
+</html>
