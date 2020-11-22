@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+}
+h1 {
+    font-family: ccsignlanguage, sans-serif;
+    color: white;
+}
+h2{
+    font-family: ccsignlanguage, sans-serif;
+    color: rgb(0, 60, 210);
+}
+h1.pages{
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+p {
+    font-family: ff-ernestine-pro, serif;
+}
+main.home{
+    background:
+    linear-gradient(
+        rgb(0, 60, 210),
+        rgb(0, 60, 210)
+    ),
+    url(images/background.png);
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+}
+a:link {
+    text-decoration: none;
+    color: white;
+    font-family: ff-ernestine-pro, serif;
+}
+a:hover {
+color: rgba(255, 255, 255, 0.5);
+}
+a:visited{
+    color: white;
+}
+footer{
+    display: flex;
+    font-family: ff-ernestine-pro, serif;
+    color: white;
+    background-color: rgb(0, 60, 210);
+}
+.left{
+    width: 50%;
+    margin-left: 10px;
+}
+.socials{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-right: 10px;
+    fill: white;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mail{
+    font-size: small;
+}
+.logo{
+    max-width: 100%;
+    margin-top: 80px;
+}
+.links{
+    font-family: ff-ernestine-pro, serif;
+    font-size: larger;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    background-color: rgb(0, 60, 210);
+}
+img.about{
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+main{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+span{
+    color: rgb(0, 60, 210);
+    font-family: ccsignlanguage, sans-serif;
+}
+.monkeysays{
+    display: flex;
+    justify-content: center;
+}
+footer.home{
+color: black;
+background-color: white;
+}
+.home-socials{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-right: 10px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  .monkeys{
+      margin-left: 10px;
+  }
+  form{
+      margin-bottom: 20px;
+  }
