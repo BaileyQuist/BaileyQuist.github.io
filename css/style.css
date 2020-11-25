@@ -19,6 +19,9 @@ nav div {
   width: 85%;
   margin: auto;
 }
+main{
+  margin-top: 20px;
+}
 header {
   padding: 40px 0;
 }
@@ -31,4 +34,8 @@ nav a:hover {
 nav {
   background-color: #ccc;
   padding: 12px;
+}
+.nowplaying{
+  display: none;
+  color: lightskyblue;
 }
