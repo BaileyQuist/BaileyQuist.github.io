@@ -261,6 +261,16 @@ background-color: white;
       }
     }
     @media only screen and (min-width: 768px){
+      footer{
+        display: flex;
+        justify-content: center;
+      }
+      .left{
+        padding-left: 25%;
+      }
+      .right{
+        padding-right: 25%;
+      }
       .links{
         display:flex;
         flex-direction: row;
