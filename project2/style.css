@@ -124,6 +124,16 @@ background-color: white;
   form{
       margin-bottom: 20px;
   }
+  .thankyou{
+    background-color: rgb(0, 60, 210);
+    font-family: ff-ernestine-pro, serif;
+    color: white;
+    text-align: center;
+    font-size: x-large;
+  }
+  p.thankyou{
+    margin-top: 300px;
+  }
   .menu {
       display:block;
       position:absolute;
